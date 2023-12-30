@@ -8,7 +8,7 @@ export class TransfersService {
   constructor() { }
 
   transfers=[
-    {"timestamp":1703945878,"sender":"Client 1","reciever":"Client 2","amount":2000},
+    {"timestamp":1703954497,"sender":"Client 1","reciever":"Client 2","amount":2000},
     {"timestamp":1703945878,"sender":"Client 1","reciever":"Client 2","amount":2000},
     {"timestamp":1703945878,"sender":"Client 1","reciever":"Client 2","amount":2000},
     {"timestamp":1703945878,"sender":"Client 1","reciever":"Client 2","amount":2000},
@@ -20,6 +20,6 @@ export class TransfersService {
   ]
 
   getTransfers(){
-    return this.transfers;
+    return this.transfers.sort((a, b) => b.timestamp - a.timestamp);
   }
 }

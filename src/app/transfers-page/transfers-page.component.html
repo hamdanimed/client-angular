@@ -18,7 +18,7 @@
         <div class="transfers-sub-container">
             <div *ngFor="let transfer of transfers" class="transfer-div">
                 <div class="transfer-subdiv">
-                    <h4 class="datetime">{{transfer["timestamp"] | date:'dd/MM/yyyy HH:mm'}}</h4>
+                    <h4 class="datetime">{{transfer["timestamp"]*1000 | date:'dd/MM/yyyy HH:mm'}}</h4>
                     <h4 class="clients">{{transfer["sender"]}} -> {{transfer["reciever"]}}</h4>
                 </div>
                 <h4 class="amount">{{transfer["amount"] | number:'1.2-2'}}Dh</h4>
