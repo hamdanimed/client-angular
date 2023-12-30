@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
+import { TransfersService } from 'src/services/transfers-service/transfers.service';
 
 @Component({
   selector: 'app-home-page',
@@ -8,14 +9,14 @@ import { Router } from '@angular/router';
 })
 export class HomePageComponent {
 
-  constructor(private router:Router){}
+  constructor(private router:Router,private transfersService:TransfersService){}
 
   price=1000000;
-  transfers=[
-    {"timestamp":1703945878,"sender":"Client 1","reciever":"Client 2","amount":2000},
-    {"timestamp":1703945878,"sender":"Client 1","reciever":"Client 2","amount":2000},
-    {"timestamp":1703945878,"sender":"Client 1","reciever":"Client 2","amount":2000},
-    {"timestamp":1703945878,"sender":"Client 1","reciever":"Client 2","amount":2000},
-  ]
+
+  transfers:any=[];
+
+  ngOnInit(){
+    this.transfers=this.transfersService.getTransfers().slice(0,4)
+  }
 
 }

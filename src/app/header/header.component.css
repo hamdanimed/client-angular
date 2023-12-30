@@ -29,6 +29,10 @@ h1{
     cursor: pointer;
 }
 
+h1:hover{
+    color:#008995;
+}
+
 .logo , .profil-logo{
     cursor: pointer;
 }

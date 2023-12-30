@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { TransfersService } from 'src/services/transfers-service/transfers.service';
 
 @Component({
   selector: 'app-transfers-page',
@@ -6,5 +7,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./transfers-page.component.css']
 })
 export class TransfersPageComponent {
+  constructor(private transfersService:TransfersService){}
 
+  transfers:any=[];
+  ngOnInit(){
+    this.transfers=this.transfersService.getTransfers();
+  }
 }

@@ -9,7 +9,16 @@ import { Router } from '@angular/router';
 export class HeaderComponent {
   constructor(private router:Router){}
 
+  toHome(){
+    this.router.navigate(['home'])
+  }
   toLogin(){
     this.router.navigate(['login']);
+  }
+  toOperationHistory(){
+    this.router.navigate(['operations'])
+  }
+  toMyTransfers(){
+    this.router.navigate(['transfers'])
   }
 }
