@@ -2,3 +2,33 @@
     width:62.85px;
     height: 62.85px;
 }
+
+nav{
+    border-bottom: 1px solid #000;
+    background: rgba(255, 255, 255, 0.69);
+    
+    padding: 0.7rem;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    gap: 1rem;
+}
+
+h1{
+    color: #000;
+    font-family: "Inter";
+    font-size: 1.25rem;
+    font-style: italic;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: -0.075rem;
+    text-decoration-line: underline;
+
+    cursor: pointer;
+}
+
+.logo , .profil-logo{
+    cursor: pointer;
+}
