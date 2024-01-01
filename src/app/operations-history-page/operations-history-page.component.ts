@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { TransfersService } from 'src/services/transfers-service/transfers.service';
 
 @Component({
   selector: 'app-operations-history-page',
@@ -6,5 +7,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./operations-history-page.component.css']
 })
 export class OperationsHistoryPageComponent {
+  constructor(private transfersService:TransfersService){}
 
+  transfers:any=[];
+  ngOnInit(){
+    this.transfers=this.transfersService.getTransfers();
+  }
 }

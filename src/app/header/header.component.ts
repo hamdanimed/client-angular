@@ -12,6 +12,9 @@ export class HeaderComponent {
   toHome(){
     this.router.navigate(['home'])
   }
+  toProfil(){
+    this.router.navigate(['profil'])
+  }
   toLogin(){
     this.router.navigate(['login']);
   }
