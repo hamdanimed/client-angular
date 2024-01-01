@@ -7,7 +7,7 @@
     <div class="transfers-container">
         <div class="header">
             <h3>Latest Transfers</h3>
-            <h3 class="view-more">View More -></h3>
+            <h3 class="view-more" (click)="toOperationsHistory()">View More -></h3>
         </div>
         <div class="transfers-sub-container">
             <div *ngFor="let transfer of transfers" class="transfer-div">

@@ -19,4 +19,8 @@ export class HomePageComponent {
     this.transfers=this.transfersService.getTransfers().slice(0,4)
   }
 
+  toOperationsHistory(){
+    this.router.navigate(['operations'])
+  }
+
 }
