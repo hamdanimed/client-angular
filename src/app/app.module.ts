@@ -9,6 +9,7 @@ import { TransfersPageComponent } from './transfers-page/transfers-page.componen
 import { OperationsHistoryPageComponent } from './operations-history-page/operations-history-page.component';
 import { AppRoutingModule } from './app-routing.module';
 import { HeaderComponent } from './header/header.component';
+import { OperationDetailComponent } from './operation-detail/operation-detail.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { HeaderComponent } from './header/header.component';
     ProfilPageComponent,
     TransfersPageComponent,
     OperationsHistoryPageComponent,
-    HeaderComponent
+    HeaderComponent,
+    OperationDetailComponent
   ],
   imports: [
     BrowserModule,

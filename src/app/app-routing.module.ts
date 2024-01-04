@@ -5,6 +5,7 @@ import { LoginPageComponent } from './login-page/login-page.component';
 import { OperationsHistoryPageComponent } from './operations-history-page/operations-history-page.component';
 import { ProfilPageComponent } from './profil-page/profil-page.component';
 import { TransfersPageComponent } from './transfers-page/transfers-page.component';
+import { OperationDetailComponent } from './operation-detail/operation-detail.component';
 
 const routes: Routes = [
   { path:'',pathMatch:'full',redirectTo:'login' },
@@ -13,6 +14,7 @@ const routes: Routes = [
   { path: 'operations', component: OperationsHistoryPageComponent },
   { path: 'profil', component: ProfilPageComponent },
   { path: 'transfers', component: TransfersPageComponent },
+  { path: 'operation-detail',component: OperationDetailComponent }
 
 ];
 
