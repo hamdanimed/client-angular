@@ -110,7 +110,7 @@
     line-height: normal;
 }
 
-button{
+.addButton{
     border-radius: 1.25rem;
     border: 3px solid #B4B4B4;
     background: rgba(255, 255, 255, 0.95);
@@ -126,6 +126,25 @@ button{
     margin-left: auto;
 }
 
-button:hover{
+.addButton:hover{
+    background-color: #FFC600 ;
+}
+.retunButton{
+    margin-right: auto;
+    border-radius: 1.25rem;
+    border: 3px solid #B4B4B4;
+    background: rgba(255, 255, 255, 0.95);
+    padding: 1rem;
+    color: #000;
+    font-family: Inter;
+    font-size: 1.2rem;
+    font-style: italic;
+    font-weight: 700;
+    line-height: normal;
+    cursor: pointer;
+    max-width: 20vw;
+
+}
+.retunButton:hover{
     background-color: #FFC600 ;
 }
