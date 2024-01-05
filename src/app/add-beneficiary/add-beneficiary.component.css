@@ -60,7 +60,7 @@ h1 {
     font-size: 2.5rem; /* Ajuster la taille de h1 selon vos besoins */
     font-weight: bold;
 }
-button{
+.addButton{
     /* width: 8.3125rem;
     height: 3.875rem; */
     padding : 0.5rem 2.5rem;
@@ -84,4 +84,29 @@ input:hover{
 h3::after {
     content: ":";
     margin-left: auto; /* Ajustez la valeur selon vos préférences */
+}
+.retunButton{
+    margin-right: auto;
+    border-radius: 1.25rem;
+    border: 3px solid #B4B4B4;
+    background: rgba(255, 255, 255, 0.95);
+    padding: 1rem;
+    color: #000;
+    font-family: Inter;
+    font-size: 1.2rem;
+    font-style: italic;
+    font-weight: 700;
+    line-height: normal;
+    cursor: pointer;
+    max-width: 20vw;
+
+}
+.retunButton:hover{
+    background-color: #FFC600 ;
+}
+.big-container{
+    padding: 1rem 25vw;
+    display: flex;
+    flex-direction: column;
+    row-gap: 3.5rem;
 }

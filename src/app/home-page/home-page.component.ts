@@ -23,4 +23,13 @@ export class HomePageComponent {
     this.router.navigate(['operations'])
   }
 
+  toTransferMoney(){
+    this.router.navigate(['transferMoney']);
+  }
+  toTransfers(){
+    this.router.navigate(['transfers']);
+  }
+  toAdd(){
+    this.router.navigate(['addBeneficiary']);
+  }
 }

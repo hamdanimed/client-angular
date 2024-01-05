@@ -1,6 +1,8 @@
 <app-header></app-header>
 
 <div class="page">
+    <div class="big-container">
+    <button class="retunButton" (click)="toTransfer()"> <- </button>
     <div class="container">
         <h1>Add Beneficiary</h1>
         <div class="input-div">
@@ -24,7 +26,7 @@
             
 
         </div>
-        <button (click)="add()">
+        <button class="addButton" (click)="add()">
             ADD
         </button>
     </div>

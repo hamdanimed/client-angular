@@ -15,4 +15,8 @@ export class AddBeneficiaryComponent {
     this.router.navigate(['home']);
   }
 
+  toTransfer(){
+    this.router.navigate(['transferMoney']);
+  }
+  
 }
