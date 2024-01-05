@@ -1,0 +1,57 @@
+<app-header></app-header>
+
+<div class="page">
+    <div class="container">
+        <h1>Transfer Money</h1>
+        <div class="input-div">
+
+            <div class="info">
+                <h3>Account transfer *</h3>
+                <select>
+                    <option value="account1">Account 1</option>
+                    <option value="account2">Account 2</option>
+                  </select>
+            </div>
+
+            <div class="info">
+                <h3 class="toAccount">To account *</h3>
+                <div class="accountDiv">
+                    <select class="accountSelect">
+                        <option value="account1">Account 1</option>
+                        <option value="account2">Account 2</option>
+                    </select>
+                    <a  class="plus-img"     href="addBeneficiary">
+                        <img src="../../assets/image 2.png" alt="new Benef">
+                    </a>
+                </div>
+            </div>
+
+            <div class="info">
+                <h3>Amount *</h3>
+                <input class="inputClass"type="text" placeholder="Enter amount">
+            </div>
+            
+            <div class="info"> 
+                <h3>In date of *</h3>
+                <input class="inputClass"type="date">
+            </div>
+
+            <div class="info">
+                <h3>Motif</h3>
+                <input class="inputClass" type="text" placeholder="Enter motif">
+            </div>
+
+        </div>
+        <div class="custom-control custom-switch">
+            <input type="checkbox" class="custom-control-input" id="customSwitch1" checked>
+            <label class="custom-control-label" for="customSwitch1">Standing order</label>
+          </div>
+        <div class="labelo">
+        <label>* : Champ obligatoire</label>
+        <button class="sendButton" (click)="send()">
+            SEND
+        </button>
+        </div>
+    </div>
+
+</div>

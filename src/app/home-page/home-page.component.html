@@ -1,0 +1,33 @@
+<app-header></app-header>
+<div class="container">
+    <div class="sold-div">
+        <h1>SOLD:</h1>
+        <h1 class="sold">{{price | number:'1.2-2'}}Dh</h1>
+    </div>  
+    <div class="transfers-container">
+        <div class="header">
+            <h3>Latest Transfers</h3>
+            <h3 class="view-more">View More -></h3>
+        </div>
+        <div class="transfers-sub-container">
+            <div *ngFor="let transfer of transfers" class="transfer-div">
+                <h4 class="datetime">{{transfer["timestamp"]*1000 | date:'dd/MM/yyyy HH:mm'}}</h4>
+                <h4 class="clients">{{transfer["sender"]}} -> {{transfer["reciever"]}}</h4>
+                <h4 class="amount">{{transfer["amount"] | number:'1.2-2'}}Dh</h4>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="box">
+            <h3>Transfer Money</h3>
+        </div>
+        <div class="box">
+            <h3>View Transfers</h3>
+        </div>
+        <div class="box">
+            <h3>Add Beneficiary</h3>
+        </div>
+    </div>
+    <!-- <div class="extra-padding">
+    </div> -->
+</div>

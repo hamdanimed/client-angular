@@ -1,0 +1,30 @@
+<app-header></app-header>
+<div class="container">
+    <h1>My Transfers</h1>
+
+    <div class="box-container">
+        <div class="box">
+            <h1>SERVED<br>TRANSFERS</h1>
+        </div>
+        <div class="box">
+            <h1>TO BE<br>SERVED</h1>
+        </div>
+        <div class="plus-box">
+            <h1>+</h1>
+        </div>
+    </div>
+
+    <div class="transfers-container">
+        <div class="transfers-sub-container">
+            <div *ngFor="let transfer of transfers" class="transfer-div">
+                <div class="transfer-subdiv">
+                    <h4 class="datetime">{{transfer["timestamp"]*1000 | date:'dd/MM/yyyy HH:mm'}}</h4>
+                    <h4 class="clients">{{transfer["sender"]}} -> {{transfer["reciever"]}}</h4>
+                </div>
+                <h4 class="amount">{{transfer["amount"] | number:'1.2-2'}}Dh</h4>
+                <button>ANNULER</button>
+            </div>
+        </div>
+    </div>
+
+</div>
