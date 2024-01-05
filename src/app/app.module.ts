@@ -23,7 +23,7 @@ import { BeneficiariesComponent } from './beneficiaries/beneficiaries.component'
     TransfersPageComponent,
     OperationsHistoryPageComponent,
     HeaderComponent,
-    OperationDetailComponent
+    OperationDetailComponent,
     TransferMoneyComponent,
     AddBeneficiaryComponent,
     BeneficiariesComponent

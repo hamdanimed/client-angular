@@ -19,7 +19,7 @@ const routes: Routes = [
   { path: 'operations', component: OperationsHistoryPageComponent },
   { path: 'profil', component: ProfilPageComponent },
   { path: 'transfers', component: TransfersPageComponent },
-  { path: 'operation-detail',component: OperationDetailComponent }
+  { path: 'operation-detail',component: OperationDetailComponent },
   { path: 'transferMoney', component: TransferMoneyComponent },
   { path: 'addBeneficiary', component: AddBeneficiaryComponent },
   { path: 'beneficiaries', component: BeneficiariesComponent },
