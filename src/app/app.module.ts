@@ -10,6 +10,9 @@ import { OperationsHistoryPageComponent } from './operations-history-page/operat
 import { AppRoutingModule } from './app-routing.module';
 import { HeaderComponent } from './header/header.component';
 import { OperationDetailComponent } from './operation-detail/operation-detail.component';
+import { TransferMoneyComponent } from './transfer-money/transfer-money.component';
+import { AddBeneficiaryComponent } from './add-beneficiary/add-beneficiary.component';
+import { BeneficiariesComponent } from './beneficiaries/beneficiaries.component';
 
 @NgModule({
   declarations: [
@@ -21,6 +24,9 @@ import { OperationDetailComponent } from './operation-detail/operation-detail.co
     OperationsHistoryPageComponent,
     HeaderComponent,
     OperationDetailComponent
+    TransferMoneyComponent,
+    AddBeneficiaryComponent,
+    BeneficiariesComponent
   ],
   imports: [
     BrowserModule,

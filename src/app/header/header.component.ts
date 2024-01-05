@@ -24,4 +24,10 @@ export class HeaderComponent {
   toMyTransfers(){
     this.router.navigate(['transfers'])
   }
+  toTransferMoney(){
+    this.router.navigate(['transferMoney'])
+  }
+  toMyBeneficaries(){
+    this.router.navigate(['beneficiaries'])
+  }
 }
