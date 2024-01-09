@@ -9,6 +9,14 @@ import { Router } from '@angular/router';
 export class HeaderComponent {
   constructor(private router:Router){}
 
+  logout() {
+    // Clear the token from local storage
+    localStorage.removeItem('token');
+    localStorage.removeItem('username');
+    //logic redirecting to the login page
+    this.router.navigate(['login']);
+  }
+
   toHome(){
     this.router.navigate(['home'])
   }

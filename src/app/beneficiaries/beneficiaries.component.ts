@@ -1,8 +1,4 @@
-<<<<<<< HEAD
-import { Component } from '@angular/core';
-=======
 import { Component, OnInit } from '@angular/core';
->>>>>>> jaa2
 import { BeneficiariesService } from 'src/services/beneficiaries-services/beneficiaries.service';
 import { Router } from '@angular/router';
 
@@ -13,15 +9,6 @@ import { Router } from '@angular/router';
 })
 export class BeneficiariesComponent {
 
-<<<<<<< HEAD
-  constructor(private BeneficiariesService: BeneficiariesService,
-    private router:Router) {}
-
-    beneficiaries:any=[];
-    ngOnInit(){
-      this.beneficiaries=this.BeneficiariesService.getBeneficiaries();
-    }
-=======
   constructor(private beneficiariesService: BeneficiariesService,
     private router:Router) {}
 
@@ -58,7 +45,6 @@ export class BeneficiariesComponent {
       );
     }
 
->>>>>>> jaa2
   Add(){
     this.router.navigate(['addBeneficiary']);
   }

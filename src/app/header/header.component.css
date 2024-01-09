@@ -32,6 +32,20 @@ h1{
 h1:hover{
     color:#008995;
 }
+.logout{
+    color: #fff !important;
+    background-color: #d12c2c;;
+    padding: 10px 30px;
+    border-radius: 30px;
+    border: 2px solid #fff;
+}
+.logout:hover{
+    color:  #d12c2c !important;
+    background-color:#fff;;
+    padding: 10px 30px;
+    border-radius: 30px;
+    border: 2px solid  #d12c2c;
+}
 
 .logo , .profil-logo{
     cursor: pointer;
