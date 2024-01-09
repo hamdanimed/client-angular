@@ -8,11 +8,7 @@
 
 .container{
     width: fit-content;
-<<<<<<< HEAD
-    padding: 3rem 2.75rem;
-=======
     padding: 1rem 2.75rem;
->>>>>>> jaa2
     gap: 4rem;
     border-radius: 1.25rem;
     background-color: rgba(255, 255, 255, 0.95);
@@ -64,11 +60,7 @@ h1 {
     font-size: 2.5rem; /* Ajuster la taille de h1 selon vos besoins */
     font-weight: bold;
 }
-<<<<<<< HEAD
-button{
-=======
 .addButton{
->>>>>>> jaa2
     /* width: 8.3125rem;
     height: 3.875rem; */
     padding : 0.5rem 2.5rem;
@@ -92,8 +84,6 @@ input:hover{
 h3::after {
     content: ":";
     margin-left: auto; /* Ajustez la valeur selon vos préférences */
-<<<<<<< HEAD
-=======
 }
 .retunButton{
     margin-right: auto;
@@ -119,5 +109,4 @@ h3::after {
     display: flex;
     flex-direction: column;
     row-gap: 3.5rem;
->>>>>>> jaa2
 }

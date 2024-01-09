@@ -1,9 +1,6 @@
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
-<<<<<<< HEAD
-=======
 import { HttpClient } from '@angular/common/http';
->>>>>>> jaa2
 
 
 @Component({
@@ -12,15 +9,6 @@ import { HttpClient } from '@angular/common/http';
   styleUrls: ['./add-beneficiary.component.css']
 })
 export class AddBeneficiaryComponent {
-<<<<<<< HEAD
-
-  constructor(private router:Router){}
-
-  add(){
-    this.router.navigate(['home']);
-  }
-
-=======
   customerId: number=1;
   firstName: string = '';
   lastName: string = '';
@@ -52,5 +40,4 @@ export class AddBeneficiaryComponent {
     
   }
   
->>>>>>> jaa2
 }
