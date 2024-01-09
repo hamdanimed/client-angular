@@ -5,13 +5,13 @@
         <h1>Transfer Money</h1>
         <div class="input-div">
 
-            <div class="info">
+            <!-- <div class="info">
                 <h3>Account transfer *</h3>
                 <select>
                     <option value="account1">Account 1</option>
                     <option value="account2">Account 2</option>
                   </select>
-            </div>
+            </div> -->
 
             <div class="info">
                 <h3 class="toAccount">To account *</h3>
@@ -27,8 +27,17 @@
             </div>
 
             <div class="info">
+                <h3 class="toAccount">Fee type : </h3>
+                <select id="type" name="type" [(ngModel)]="feetype" required>
+                <option value="DONOR">DONOR</option>
+                <option value="BENEFICIARY">BENEFICIARY</option>
+                <option value="BOTH">BOTH</option>
+            </select>
+            </div>
+
+            <div class="info">
                 <h3>Amount *</h3>
-                <input class="inputClass"type="text" placeholder="Enter amount">
+                <input class="inputClass"type="text" placeholder="Enter amount" [(ngModel)]="amount">
             </div>
             
             <div class="info"> 
