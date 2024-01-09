@@ -1,0 +1,163 @@
+.container{
+    padding: 3rem 20vw;
+    display: flex;
+    flex-direction: column;
+    row-gap: 1.3rem;
+}
+
+.sold-div h1{
+    color: #000;
+    font-family: Inter;
+    font-size: 1.875rem;
+    font-style: italic;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: -0.1125rem;
+}
+
+.sold-div{
+    border-radius: 1.25rem;
+    border: 3px solid #B4B4B4;
+    background: rgba(255, 255, 255, 0.95);
+
+    padding:2.5rem 3.2rem;
+
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 1rem;
+    justify-content: space-between;
+}
+
+.sold-div:hover{
+    border-color:#7e7e7e;
+    cursor: pointer;
+}
+
+.sold-div > .sold:hover{
+    color:#008995;
+    /* cursor: pointer; */
+}
+
+
+.transfer-div{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+
+    padding: 1.14rem 3rem;
+
+    /* border-bottom: 2px #B4B4B4 solid; */
+    border-radius: 1.25rem;
+
+}
+.transfer-div:hover{
+    background: #e9e8e8;
+    cursor: pointer;
+}
+
+.transfer-div .datetime{
+    color: #777;
+    font-family: Inter;
+    font-size: 0.875rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.transfer-div .clients{
+    color: #000;
+    font-family: Inter;
+    font-size: 1.125rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.transfer-div .amount{
+    color: #000;
+    font-family: Inter;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.transfers-container{
+    border-radius: 1.25rem;
+    border: 3px solid #B4B4B4;
+    background: rgba(255, 255, 255, 0.95);
+
+    padding:1rem 1.75rem;
+}
+
+.transfers-container:hover{
+    border-color:#7e7e7e;
+}
+
+.transfers-container > .header{ 
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.2rem 2rem 1rem;
+
+    color: #A19F9F;
+    font-family: Inter;
+    font-size: 1.375rem;
+    font-style: italic;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: -0.0825rem;
+
+
+}
+
+.transfers-container > .header  .view-more{ 
+    letter-spacing: -0.07125rem;
+    text-decoration-line: underline;
+    cursor: pointer;
+}
+.transfers-container > .header  .view-more:hover{ 
+    color: #000000;
+}
+
+.transfers-sub-container{
+    background-color:rgba(226, 226, 226, 0.312);
+    border-radius: 1.25rem;
+    padding:1rem;
+}
+
+.container > .footer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.box{
+    border-radius: 1.25rem;
+    border: 3px solid #B4B4B4;
+    background: rgba(255, 255, 255, 0.95);
+
+    padding: 1.5rem 2.3rem;
+
+    color: #000;
+    font-family: Inter;
+    font-size: 1.5rem;
+    font-style: italic;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: -0.09rem;
+
+    cursor: pointer;
+}
+
+.box:hover{
+    border-color: #000000;
+    background: #FFC600;
+}
+
+/* .extra-padding{
+    height:10rem;
+} */

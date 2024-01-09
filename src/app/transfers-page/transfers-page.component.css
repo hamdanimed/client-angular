@@ -1,0 +1,171 @@
+.container{
+    padding: 3rem 25vw;
+    display: flex;
+    flex-direction: column;
+    row-gap: 2.5rem;
+}
+
+.container > h1{
+    color: #000;
+    font-family: Inter;
+    font-size: 2.0625rem;
+    font-style: italic;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: -0.12375rem;
+
+    text-align: center;
+}
+
+.box-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap:3rem;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.box h1{
+    color: #000;
+    font-family: Inter;
+    font-size: 1.875rem;
+    font-style: italic;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: -0.1125rem;
+
+    cursor: pointer;
+}
+
+.box{
+    border-radius: 1.25rem;
+    border: 3px solid #B4B4B4;
+    background: rgba(255, 255, 255, 0.95);
+
+    padding:1.5rem 4rem 1.5rem 3rem;
+}
+.box:hover{
+    background-color: #FFC600;
+    border-color: #000;
+}
+
+.plus-box h1{
+    color: #B4B4B4;
+    font-family: Inter;
+    font-size: 3.6875rem;
+    font-style: italic;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: -0.22125rem;
+}
+
+.plus-box{
+    border-radius: 1.25rem;
+    border: 3px solid #B4B4B4;
+    background: rgba(255, 255, 255, 0.95);
+    align-self: stretch;
+    padding : 1.1rem 2rem 1.1rem 1.6rem;
+    text-align: center;
+
+    cursor: pointer;
+}
+.plus-box:hover{
+    background-color: #FFC600;
+    border-color: #000;
+}
+
+.plus-box:hover h1{
+    color:#000;
+}
+
+.transfers-container{
+    border-radius: 1.25rem;
+    border: 3px solid #B4B4B4;
+    background: rgba(255, 255, 255, 0.95);
+
+    padding:1rem 1.75rem;
+}
+
+.transfers-sub-container{
+    /* border-radius: 1.25rem; */
+    scrollbar-width: thin;
+    max-height: 40vh;
+    overflow-y: auto;
+}
+
+.transfers-container:hover{
+    border-color:#7e7e7e;
+}
+
+
+.transfers-sub-container button{
+    color: #000;
+    font-family: Inter;
+    font-size: 0.75rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+
+    border-radius: 0.625rem;
+    border: 2px solid #000;
+    background: rgba(254, 255, 255, 0);
+    
+    padding:0.3rem 1rem;
+}
+
+.transfers-sub-container button:hover{
+    background-color: #FFC600;
+    cursor: pointer;
+}
+
+.transfer-div{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: end;
+    justify-content: space-between;
+    gap:1.2rem;
+
+    padding: 1rem 2rem;
+
+    /* border-bottom: 2px #B4B4B4 solid; */
+    border-radius: 1.25rem;
+
+}
+.transfer-div:hover{
+    background: #e9e8e8;
+    cursor: pointer;
+}
+
+.transfer-subdiv{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    
+}
+
+.transfer-div .datetime{
+    color: #777;
+    font-family: Inter;
+    font-size: 0.875rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.transfer-div .clients{
+    color: #000;
+    font-family: Inter;
+    font-size: 1.125rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.transfer-div .amount{
+    color: #000;
+    font-family: Inter;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}

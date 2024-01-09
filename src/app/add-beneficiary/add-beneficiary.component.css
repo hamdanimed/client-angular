@@ -1,0 +1,112 @@
+.page{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+
+
+.container{
+    width: fit-content;
+    padding: 1rem 2.75rem;
+    gap: 4rem;
+    border-radius: 1.25rem;
+    background-color: rgba(255, 255, 255, 0.95);
+    box-shadow: 0px 4px 7px 0px rgba(0, 0, 0, 0.25);
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.info{
+    display: flex;
+    align-items: center;
+    column-gap:  3rem;
+    padding: 0;
+}
+.input-div{
+    display: flex;
+    flex-direction: column;
+    row-gap: 2.2rem;
+    justify-content: center;
+    align-items: center;
+}
+input{
+    /* display: block; */
+    width: 23rem;
+    /* height: 3.125rem; */
+    padding:1rem;
+    border-radius: 0.625rem;
+    border: none;
+    background: #D6D6D6;
+    color: rgba(0, 0, 0, 0.50);
+    font-family: Inter;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    outline: none;
+    
+}
+h3{
+    width: 15rem;
+    font-weight: bold;
+    font-size: 1.3rem;
+    display: flex;
+    align-items: center;
+}
+h1 {
+    font-size: 2.5rem; /* Ajuster la taille de h1 selon vos besoins */
+    font-weight: bold;
+}
+.addButton{
+    /* width: 8.3125rem;
+    height: 3.875rem; */
+    padding : 0.5rem 2.5rem;
+
+    border-radius: 0.625rem;
+    background: #FFC600;
+
+    color: #000;
+    font-family: Inter;
+    font-size: 1.375rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-left: auto;
+    border: 3px solid #000;
+    cursor: pointer;
+}
+input:hover{
+    color: #000;
+}
+h3::after {
+    content: ":";
+    margin-left: auto; /* Ajustez la valeur selon vos préférences */
+}
+.retunButton{
+    margin-right: auto;
+    border-radius: 1.25rem;
+    border: 3px solid #B4B4B4;
+    background: rgba(255, 255, 255, 0.95);
+    padding: 1rem;
+    color: #000;
+    font-family: Inter;
+    font-size: 1.2rem;
+    font-style: italic;
+    font-weight: 700;
+    line-height: normal;
+    cursor: pointer;
+    max-width: 20vw;
+
+}
+.retunButton:hover{
+    background-color: #FFC600 ;
+}
+.big-container{
+    padding: 3rem 25vw;
+    display: flex;
+    flex-direction: column;
+    row-gap: 3.5rem;
+}

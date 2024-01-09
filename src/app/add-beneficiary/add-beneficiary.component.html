@@ -1,0 +1,34 @@
+<app-header></app-header>
+
+<div class="page">
+    <div class="big-container">
+    <button class="retunButton" (click)="toTransfer()"> <- </button>
+    <div class="container">
+        <h1>Add Beneficiary</h1>
+        <div class="input-div">
+
+
+            <div class="info">
+                <h3>First Name</h3>
+                <input type="text" placeholder="Enter First Name" [(ngModel)]="firstName">
+            </div>
+            
+            <div class="info">
+                <h3>Last Name</h3>
+                <input type="text" placeholder="Enter Last Name" [(ngModel)]="lastName">
+            </div>
+
+            <div class="info">
+                <h3>Phone</h3>
+                <input type="text" placeholder="Enter Phone" [(ngModel)]="phone">
+            </div>
+
+            
+
+        </div>
+        <button class="addButton" (click)="add()">
+            ADD
+        </button>
+    </div>
+
+</div>

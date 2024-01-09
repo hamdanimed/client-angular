@@ -1,0 +1,22 @@
+<app-header></app-header>
+
+<div class="container">
+    <h1>My Beneficiaries</h1>
+    <div class="beneficiaries-container">
+        <div class="beneficiaries-sub-container">
+            <div *ngFor="let beneficiary of beneficiaries" class="beneficiary-div">
+                <div class="beneficiary-subdiv">
+                    <h4 class="datetime">{{beneficiary["timestamp"]*1000 | date:'dd/MM/yyyy HH:mm'}}</h4>
+                    <h4 class="clients">{{beneficiary["lastName"]}} {{beneficiary["firstName"]}}</h4>
+                </div>
+                <h4 class="phone">{{beneficiary["phone"]}}</h4>
+                <a  class="plus-img"     (click)="deleteBeneficiary(beneficiary.id)">
+                    <img src="../../assets/image 13.svg" alt="new Benef">
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <button class="addButton" (click)="Add()">Add Beneficiary</button>
+
+</div>
