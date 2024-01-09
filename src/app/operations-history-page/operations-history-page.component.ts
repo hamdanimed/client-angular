@@ -11,8 +11,19 @@ export class OperationsHistoryPageComponent {
   constructor(private transfersService:TransfersService,private router:Router){}
 
   transfers:any=[];
+  customerEmail="hamdanimee@gmail.com";
   ngOnInit(){
-    this.transfers=this.transfersService.getTransfers();
+    //the transfers in which the customer is involved as creditor or debitor (kaywsloh floss [+] ola kaysift floss [-])
+    this.transfersService.getCustomerTransfersAsCustomerAndBeneficiary(this.customerEmail).subscribe((response:any)=>{
+      response.forEach((t:any) => {
+        let sign="-";
+        if(t["beneficiary"]["email"]===this.customerEmail){
+            sign="+";
+        }
+        this.transfers.push({...t,sign:sign})
+      });
+      console.log(this.transfers)
+    });
   }
 
   toOperationDetail(){

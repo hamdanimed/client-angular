@@ -14,13 +14,30 @@ export class HomePageComponent {
   price=1000000;
 
   transfers:any=[];
-
+  customerEmail="hamdanimee@gmail.com";
   ngOnInit(){
-    this.transfers=this.transfersService.getTransfers().slice(0,4)
+    this.transfersService.getCustomerTransfersAsCustomerAndBeneficiary(this.customerEmail).subscribe((response:any)=>{
+      response.forEach((t:any) => {
+        let sign="-";
+        if(t["beneficiary"]["email"]===this.customerEmail){
+            sign="+";
+        }
+        this.transfers.push({...t,sign:sign})
+      });
+      console.log(this.transfers)
+    });
   }
 
   toOperationsHistory(){
     this.router.navigate(['operations'])
+  }
+
+  toTransferMoney(){
+    this.router.navigate(['transferMoney'])
+  }
+
+  toAddBeneficiary(){
+    this.router.navigate(['addBeneficiary'])
   }
 
 }

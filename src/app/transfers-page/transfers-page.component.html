@@ -3,25 +3,37 @@
     <h1>My Transfers</h1>
 
     <div class="box-container">
-        <div class="box">
+        <div (click)="toggleServed()" [ngStyle]="{'background-color': (served==true) ? '#FFC600' : 'rgba(255, 255, 255, 0.95)',
+                                                  'border-color':(served==true) ? '#000':'#B4B4B4'}" class="box">
             <h1>SERVED<br>TRANSFERS</h1>
         </div>
-        <div class="box">
+        <div (click)="toggleToBeServed()" [ngStyle]="{'background-color': (toBeServed==true) ? '#FFC600' : 'rgba(255, 255, 255, 0.95)',
+        'border-color':(toBeServed==true) ? '#000':'#B4B4B4'}" class="box">
             <h1>TO BE<br>SERVED</h1>
         </div>
-        <div class="plus-box">
+        <div routerLink="/transferMoney" class="plus-box">
             <h1>+</h1>
         </div>
     </div>
 
     <div class="transfers-container">
-        <div class="transfers-sub-container">
-            <div *ngFor="let transfer of transfers" class="transfer-div">
+        <div *ngIf="served" class="transfers-sub-container">
+            <div *ngFor="let transfer of servedCustomerTransfers" class="transfer-div">
                 <div class="transfer-subdiv">
-                    <h4 class="datetime">{{transfer["timestamp"]*1000 | date:'dd/MM/yyyy HH:mm'}}</h4>
-                    <h4 class="clients">{{transfer["sender"]}} -> {{transfer["reciever"]}}</h4>
+                    <h4 class="datetime">{{transfer["transferDTO"]["timestamp"]| date:'dd/MM/yyyy HH:mm'}}</h4>
+                    <h4 class="clients">{{transfer["customer"]["firtName"]}} {{transfer["customer"]["lastName"]}} -> {{transfer["beneficiary"]["firstName"]}} {{transfer["beneficiary"]["lastName"]}}</h4>
                 </div>
-                <h4 class="amount">{{transfer["amount"] | number:'1.2-2'}}Dh</h4>
+                <h4 class="amount">{{transfer["transferDTO"]["amount"] | number:'1.2-2'}}Dh</h4>
+                <button>ANNULER</button>
+            </div>
+        </div>
+        <div *ngIf="toBeServed" class="transfers-sub-container">
+            <div *ngFor="let transfer of toBeServedCustomerTransfers" class="transfer-div">
+                <div class="transfer-subdiv">
+                    <h4 class="datetime">{{transfer["transferDTO"]["timestamp"]| date:'dd/MM/yyyy HH:mm'}}</h4>
+                    <h4 class="clients">{{transfer["customer"]["firtName"]}} {{transfer["customer"]["lastName"]}} -> {{transfer["beneficiary"]["firstName"]}} {{transfer["beneficiary"]["lastName"]}}</h4>
+                </div>
+                <h4 class="amount">{{transfer["transferDTO"]["amount"] | number:'1.2-2'}}Dh</h4>
                 <button>ANNULER</button>
             </div>
         </div>
