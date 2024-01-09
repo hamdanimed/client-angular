@@ -10,19 +10,19 @@ import { TransferMoneyComponent } from './transfer-money/transfer-money.componen
 import { AddBeneficiaryComponent } from './add-beneficiary/add-beneficiary.component';
 import { BeneficiariesComponent } from './beneficiaries/beneficiaries.component';
 
-
+import { AuthGuard } from './guard/auth.guard';
 
 const routes: Routes = [
   { path:'',pathMatch:'full',redirectTo:'login' },
-  { path: 'home', component: HomePageComponent },
+  { path: 'home', component: HomePageComponent , canActivate: [AuthGuard]  },
   { path: 'login', component: LoginPageComponent },
-  { path: 'operations', component: OperationsHistoryPageComponent },
-  { path: 'profil', component: ProfilPageComponent },
-  { path: 'transfers', component: TransfersPageComponent },
-  { path: 'operation-detail',component: OperationDetailComponent },
-  { path: 'transferMoney', component: TransferMoneyComponent },
-  { path: 'addBeneficiary', component: AddBeneficiaryComponent },
-  { path: 'beneficiaries', component: BeneficiariesComponent },
+  { path: 'operations', component: OperationsHistoryPageComponent , canActivate: [AuthGuard]  },
+  { path: 'profil', component: ProfilPageComponent , canActivate: [AuthGuard]  },
+  { path: 'transfers', component: TransfersPageComponent, canActivate: [AuthGuard]   },
+  { path: 'operation-detail',component: OperationDetailComponent, canActivate: [AuthGuard]   },
+  { path: 'transferMoney', component: TransferMoneyComponent, canActivate: [AuthGuard]   },
+  { path: 'addBeneficiary', component: AddBeneficiaryComponent, canActivate: [AuthGuard]   },
+  { path: 'beneficiaries', component: BeneficiariesComponent, canActivate: [AuthGuard]   },
 
 
 ];
